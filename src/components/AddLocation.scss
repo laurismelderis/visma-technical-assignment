@@ -1,0 +1,20 @@
+.btn-red {
+  color: red !important;
+}
+
+.vismaicon-red::before {
+  background-color: red !important;
+}
+
+.custom-input {
+  padding-left: 1.5rem !important;
+  padding-block: 3px !important;
+}
+
+.with-align-self-start {
+  margin-left: 2rem;
+}
+
+.with-align-self-start > * {
+  align-self: flex-start;
+}

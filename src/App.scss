@@ -1,0 +1,26 @@
+@import 'https://vud-icons.s3.eu-north-1.amazonaws.com/latest/dist/css/vud-icons.min.css';
+@import '~@vismaux/vud/dist/css/vud.min.css';
+
+:root {
+  --button-border-color: transparent;
+  --button-shadow-color: transparent;
+  --button-text-color: var(--blue-50);
+  --button-bg: transparent;
+
+  --button-focus-border-color: transparent;
+  --button-focus-shadow-color: transparent;
+
+  --button-hover-bg: transparent;
+  --button-hover-border-color: transparent;
+  --button-hover-shadow-color: transparent;
+
+  --button-pressed-bg: transparent;
+  --button-pressed-border-color: transparent;
+
+  --button-primary-border-color: transparent;
+  --button-primary-shadow-color: transparent;
+  --button-primary-bg: var(--blue-50);
+
+  --button-primary-hover-bg: transparent;
+  --button-primary-hover-border-color: transparent;
+}

@@ -1,0 +1,30 @@
+.text-input-field-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid rgb(133, 133, 133);
+}
+
+.vismaicon-black-xs::before {
+  background-color: black !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: transparent;
+  padding-left: 1.5rem;
+  padding-block: 3px;
+}
+
+input:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
