@@ -29,7 +29,10 @@ const ButtonDropdown = ({
   }
 
   return (
-    <div className={`dropdown ${isExpanded ? 'open' : ''}`}>
+    <div
+      data-testid="button-dropdown"
+      className={`dropdown ${isExpanded ? 'open' : ''}`}
+    >
       <button
         type="button"
         className="btn dropdown-toggle btn-default-dropdown"

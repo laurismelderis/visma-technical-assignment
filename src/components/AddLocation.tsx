@@ -4,14 +4,14 @@ import './AddLocation.scss'
 import ButtonDropdown from './common/ButtonDropdown'
 import TextInputField from './common/TextInputField'
 
+const options: Array<string> = [
+  'Sporta iela 11, Rīga',
+  'Maldugunu iela 2, Rīga',
+  'Lindhagengatan 94, Stockholm',
+]
+
 const AddLocation = (): JSX.Element => {
   const [addLocationExpanded, setAddLocationExpanded] = useState(false)
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [options, setOptions] = useState<Array<string>>([
-    'Sporta iela 11, Rīga',
-    'Maldugunu iela 2, Rīga',
-    'Lindhagengatan 94, Stockholm',
-  ])
   const [selectedAddress, setSelectedAddress] = useState<string | undefined>()
   const [addingAddress, setAddingAddress] = useState<string | undefined>()
 
@@ -25,7 +25,7 @@ const AddLocation = (): JSX.Element => {
 
   const handleSaveClick = (): void => {
     // eslint-disable-next-line no-alert
-    window.alert(`${selectedAddress} : ${addingAddress}`)
+    window.alert(`${selectedAddress}\n${addingAddress}`)
   }
 
   const handleAddLocationExpandedSwitch = (): void => {
@@ -57,6 +57,7 @@ const AddLocation = (): JSX.Element => {
           />
           <TextInputField
             onChange={handleAddingAddressChange}
+            placeholder="Add new address"
             value={addingAddress}
           />
           <Button onClick={handleSaveClick} buttonType="primary">

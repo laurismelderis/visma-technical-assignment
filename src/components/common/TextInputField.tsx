@@ -4,11 +4,13 @@ import { Icon } from '@vismaux/react-vud'
 
 export interface TextInputFieldProps {
   value?: string
+  placeholder?: string
   onChange?(text: string): void
 }
 
 const TextInputField = ({
   value,
+  placeholder,
   onChange,
 }: TextInputFieldProps): JSX.Element => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void =>
@@ -17,9 +19,9 @@ const TextInputField = ({
   const handleInputClear = (): void => onChange && onChange('')
 
   return (
-    <div className="text-input-field-wrapper">
+    <div data-testid="text-input-field" className="text-input-field-wrapper">
       <input
-        placeholder="Enter text"
+        placeholder={placeholder}
         onChange={handleInputChange}
         value={value}
       />
@@ -32,6 +34,7 @@ const TextInputField = ({
 
 TextInputField.defaultProps = {
   value: '',
+  placeholder: '',
   onChange: null,
 }
 
